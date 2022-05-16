@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { filter_action, shop_action } from "../store/main";
+import {shop_action } from "../store/main";
 import { useState } from "react";
 function Filter(){
   const [filterInput,setFilterInput]=useState({
