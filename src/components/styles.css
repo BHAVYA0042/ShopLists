@@ -1,0 +1,235 @@
+.navbar{
+  padding: 1% 5%;
+  background-color: antiquewhite;
+  margin-bottom: 3%;
+}
+.navbar h1{
+  margin: 0;
+}
+.display{
+  padding: 0 5%;
+  text-align: right;
+}
+.card{
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2%;
+  padding-top: 0;
+  margin: 2% 6%;
+  display: grid;
+  grid-template-columns: 38% 45% 17%;
+}
+.disp{
+  padding-left: 8%;
+  text-align: left;
+  padding-top: 15%;
+}
+.infoClass{
+  margin:auto;
+  text-align: center;
+  justify-content: center;
+}
+.disp h1{
+  font-size: 2rem;
+  margin-top: 0;
+}
+.disp h3{
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+.dp img{
+  width:90%;
+}
+.card ul{
+  list-style-type: none;
+  text-align: right;
+  padding-right: 10%;
+  padding-top: 30%;
+}
+.card li{
+  cursor: pointer;
+  margin-bottom: 10%;
+  list-style: none;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+.shop_grid{
+  display: grid;
+}
+
+.red{
+  border: 1px solid red;
+  padding: 2%;
+  background-color: red;
+}
+.green{
+  border: 1px solid green;
+  padding: 2%;
+  background-color: green;
+}
+.direction{
+  font-family: 'Pacifico', cursive;
+  position: fixed;
+  bottom:25%;
+  right: 8%;
+}
+.addButton{
+  position: fixed;
+  bottom:5%;
+  right: 5%;
+  cursor: pointer;
+}
+.tab,.mobile{
+  display: none;
+}
+
+
+/* ****************INPUT************** */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75%;
+  width: 25%;
+  background-color: white;
+  padding-bottom: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 3000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.inputForm{
+  padding: 15%;
+}
+.inputForm div{
+  padding: 1%;
+  justify-content: center;
+  margin-bottom: 2%;
+  display: flex;
+}
+.inputForm input {
+  font-size: 1rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #6D8B74;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10%;
+}
+.inputForm input:focus {
+  border-color: green
+}
+.inputForm button{
+  margin-top: 3%;
+  font-size: 1.25rem;
+  padding: 4% 10%;
+  border-radius: 30px;
+  background-color: #6BCB77;
+  border: solid 2px #6BCB77 ;
+  cursor: pointer;
+}
+
+/* //////////////FILTER//////////// */
+.filter_box{
+  height: 25%;
+  width: 25%;
+  /* padding: 5%; */
+  position:relative;
+}
+.filter_form{
+  background-color: antiquewhite;
+  padding: 3%;
+  border: solid 1px black;
+  position: absolute;
+  top:2%;
+  left:320%;
+}
+.filter_form input{
+margin: 2%;
+}
+.filter_form button{
+  margin:3%;
+}
+/* .radioInput{
+  outline-style: initial;
+} */
+
+
+
+
+
+
+@media screen and (min-width:450px) and (max-width:1023px){
+.filter_form{
+  top:2%;
+  left:280%;
+}
+}
+/* ****************MOBILE DEVICES**************** */
+@media screen and (max-width:450px) {
+  .card{
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 4% 8%;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+  }
+  .modal {
+    height: 75%;
+    width: 60%;
+  }
+  .disp{
+    /* text-align: center; */
+    padding:3% 0 3% 8%;
+  }
+  .card ul{
+    list-style-type: none;
+    text-align: left;
+    padding-right: 10%;
+    padding-top: 0;
+  }
+  .card li{
+    cursor: pointer;
+    margin-right: 5%;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .infoClass{
+    margin-top:35%;
+    text-align: center;
+    justify-content: center;
+  }
+  .filter_form{
+    top:2%;
+    left:180%;
+  }
+
+}
+@media screen and (max-width:320px) {
+  .filter_form{
+    top:2%;
+    left:130%;
+  }
+}
